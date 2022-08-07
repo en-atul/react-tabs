@@ -6,7 +6,7 @@
 **React-Tabs is an animated tab navigation component which is designed for react
 app.**
 
-**[Live Demo](https://codesandbox.io/s/t-react-collapsible-zcrjlw?file=/src/App.js)**
+**[Live Demo](https://codesandbox.io/s/t-react-tab-mdnzqn?file=/src/App.js)**
 
 ![Alt text](visual/react-collapsible.png?raw=true 'React Tabs')
 
