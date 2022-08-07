@@ -63,7 +63,7 @@ const App = () => {
   return (
    <Tabs
  tabs={tabs}
- tabeStyle={{
+ tabStyle={{
          background: `#fff`,
          font-weight: 500,
          color: "#333"
