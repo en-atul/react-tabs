@@ -1,1 +1,1 @@
-export {default as Collapsible} from './Tabs'
+export {default as Tabs} from './Tabs'
