@@ -78,11 +78,11 @@ export default App;
 
 # Props
 
-| name          | type     | required | default   | description                                                    |
-| ------------- | -------- | -------- | --------- | -------------------------------------------------------------- |
-| tabs          | array    | true     | []        | it takes an array of object `{ title: string \| ReactNode }[]` |
-| tabsClassName | string   | false    | undefined | add any custom class you want                                  |
-| tabsStyle     | object   | false    | undefined | `wrapperStyle= {{ background:"#ccc", color:"#999", ...etc }}`  |
-| tabClassName  | string   | false    | undefined | add any custom class you want                                  |
-| tabStyle      | object   | false    | undefined | ` itemStyle= {{ padding:4, }}`                                 |
-| onChange      | function | false    | undefined | ` onChange={(tabIndex)=>setCurrentTab(tabIndex)}`              |
+| name          | type     | required | default   | description                                                                                                                                     |
+|---------------|----------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| tabs          | array    | true     | []        | it takes an array of object       `{       title: string \| ReactNode   }[]`                                                                    |
+| tabsClassName | string   | false    | undefined | add any custom class you want                                                                                                                   |
+| tabsStyle     | object   | false    | undefined |        `wrapperStyle=  {{                    background:"#ccc",                    color:"#999",                    ...etc                  }}` |
+| tabClassName  | string   | false    | undefined | add any custom class you want                                                                                                                   |
+| tabStyle      | object   | false    | undefined |  `   itemStyle= {{        padding:4, }}`                                                                                                        |
+| onChange      | function | false    | undefined |  `   onChange={(tabIndex)=>setCurrentTab(tabIndex)} `                                                                                           |
