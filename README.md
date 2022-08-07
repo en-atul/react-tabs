@@ -14,17 +14,17 @@ app.**
 
 ```js
  # If you use npm:
- npm i @atul15r/react-collapsible
+ npm i @atul15r/react-tabs
 
  # If you use yarn:
- yarn add @atul15r/react-collapsible
+ yarn add @atul15r/react-tabs
 
 
  ES6 Usage
- import { Collapsible } from '@atul15r/react-collapsible';
+ import { Collapsible } from '@atul15r/react-tabs';
 
  Commonjs Usage
- var Collapsible = require('@atul15r/react-collapsible');
+ var Collapsible = require('@atul15r/react-tabs');
 
 ```
 
@@ -33,7 +33,7 @@ app.**
 ![Alt text](visual/react-collapsible-simple.gif?raw=true 'React Collapsible')
 
 ```js
-<Collapsible items={items} />
+<Tabs items={items} />
 ```
 
 # Usage With Custom Styles
@@ -46,7 +46,7 @@ app.**
 ```js
 
 import React from 'react';
-import { Tabs } from 'react-tabs';
+import { Tabs } from '@atul15r/react-tabs';
 
 const tabs = [
   {
@@ -84,16 +84,11 @@ export default App;
 
 # Props
 
-| name                 | type   | required | default   | description                                                                                |
-| -------------------- | ------ | -------- | --------- | ------------------------------------------------------------------------------------------ |
-| items                | array  | true     | []        | it takes an array of object `{ key: number title: string content: string \| ReactNode }[]` |
-| wrapperClassName     | string | false    | undefined | add any custom class you want                                                              |
-| wrapperStyle         | object | false    | undefined | `wrapperStyle= {{ background:"#ccc", color:"#999", ...etc }}`                              |
-| itemClassName        | string | false    | undefined | add any custom class you want                                                              |
-| itemStyle            | object | false    | undefined | ` itemStyle= {{ padding:4, }}`                                                             |
-| itemTitleClassName   | string | false    | undefined | add any custom class you want eg: "text-lg italic" ...etc                                  |
-| itemTitleStyle       | object | false    | undefined | `itemTitleStyle= {{ fontSize:12 }}`                                                        |
-| itemContentClassName | string | false    | undefined | add any custom class you want eg: "p-4 mx-3" ...etc                                        |
-| itemContentStyle     | object | false    | undefined | `itemContentStyle= {{ padding:"4px 12px", background:"#fefefe" }}`                         |
-| icon                 | func   | false    | undefined | `<Collapsible icon={(isOpen:boolean) => <IconComponent isOpen={isOpen}/>} />`              |
-| iconStyle            | object | false    | undefined | ` iconStyle= {{ activeColor:"#fff", inactiveColor: "#fff", width: 20, height: 20 }}`       |
+| name          | type     | required | default   | description                                                                                                                                     |
+|---------------|----------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| tabs          | array    | true     | []        | it takes an array of object       `{       title: string \| ReactNode   }[]`                                                                    |
+| tabsClassName | string   | false    | undefined | add any custom class you want                                                                                                                   |
+| tabsStyle     | object   | false    | undefined |        `wrapperStyle=  {{                    background:"#ccc",                    color:"#999",                    ...etc                  }}` |
+| tabClassName  | string   | false    | undefined | add any custom class you want                                                                                                                   |
+| tabStyle      | object   | false    | undefined |  `   itemStyle= {{        padding:4, }}`                                                                                                        |
+| onChange      | function | false    | undefined |  `   onChange={(tabIndex)=>setCurrentTab(tabIndex)} `                                                                                           |
