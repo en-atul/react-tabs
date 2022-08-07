@@ -12,5 +12,5 @@ export interface TabProps {
   tabStyle?: CSSProperties
   tabClassName?: string
   borderStyle?: CSSProperties
-  borderClassName?:string
+  borderClassName?: string
 }
