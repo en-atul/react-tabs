@@ -10,6 +10,8 @@ const Tabs: FC<TabProps> = ({
   tabsClassName,
   tabClassName,
   tabStyle,
+  borderStyle,
+  borderClassName,
 }) => {
   const [activeTab, setTab] = useState(1)
 
@@ -36,11 +38,12 @@ const Tabs: FC<TabProps> = ({
       })}
 
       <li
-        className="slider"
+        className={`slider ${borderClassName}`}
         role="presentation"
         style={{
           width: `${100 / tabs.length}%`,
           left: `${(100 / tabs.length) * (activeTab - 1)}%`,
+          ...borderStyle,
         }}
       />
     </ul>

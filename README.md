@@ -63,16 +63,10 @@ const App = () => {
   return (
    <Tabs
  tabs={tabs}
- itemTitleStyle={{
-         background: `repeating-radial-gradient(
-         circle,
-         purple,
-         purple 10px,
-         #4b026f 10px,
-         #4b026f 20px
-  )`,
-  font-weight: 500,
-  color: "#fff"
+ tabeStyle={{
+         background: `#fff`,
+         font-weight: 500,
+         color: "#333"
  }}
 />
   );
@@ -84,11 +78,11 @@ export default App;
 
 # Props
 
-| name          | type     | required | default   | description                                                                                                                                     |
-|---------------|----------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| tabs          | array    | true     | []        | it takes an array of object       `{       title: string \| ReactNode   }[]`                                                                    |
-| tabsClassName | string   | false    | undefined | add any custom class you want                                                                                                                   |
-| tabsStyle     | object   | false    | undefined |        `wrapperStyle=  {{                    background:"#ccc",                    color:"#999",                    ...etc                  }}` |
-| tabClassName  | string   | false    | undefined | add any custom class you want                                                                                                                   |
-| tabStyle      | object   | false    | undefined |  `   itemStyle= {{        padding:4, }}`                                                                                                        |
-| onChange      | function | false    | undefined |  `   onChange={(tabIndex)=>setCurrentTab(tabIndex)} `                                                                                           |
+| name          | type     | required | default   | description                                                    |
+| ------------- | -------- | -------- | --------- | -------------------------------------------------------------- |
+| tabs          | array    | true     | []        | it takes an array of object `{ title: string \| ReactNode }[]` |
+| tabsClassName | string   | false    | undefined | add any custom class you want                                  |
+| tabsStyle     | object   | false    | undefined | `wrapperStyle= {{ background:"#ccc", color:"#999", ...etc }}`  |
+| tabClassName  | string   | false    | undefined | add any custom class you want                                  |
+| tabStyle      | object   | false    | undefined | ` itemStyle= {{ padding:4, }}`                                 |
+| onChange      | function | false    | undefined | ` onChange={(tabIndex)=>setCurrentTab(tabIndex)}`              |
