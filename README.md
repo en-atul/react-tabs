@@ -8,7 +8,7 @@ app.**
 
 **[Live Demo](https://codesandbox.io/s/atul15r-react-tab-mdnzqn)**
 
-![Alt text](visual/react-collapsible.png?raw=true 'React Tabs')
+![Alt text](visual/react-tabs.gif?raw=true 'React Tabs')
 
 # Installation
 
@@ -21,27 +21,20 @@ app.**
 
 
  ES6 Usage
- import { Collapsible } from '@atul15r/react-tabs';
+ import { Tabs } from '@atul15r/react-tabs';
 
  Commonjs Usage
- var Collapsible = require('@atul15r/react-tabs');
+ var Tabs = require('@atul15r/react-tabs');
 
 ```
 
 # Quick Start
-
-![Alt text](visual/react-collapsible-simple.gif?raw=true 'React Collapsible')
 
 ```js
 <Tabs items={items} />
 ```
 
 # Usage With Custom Styles
-
-> icon component can be HTMLElement (i.e. svg/image/div/section
-> ...etc)/React-Component
-
-![Alt text](visual/react-collapsible-black.gif?raw=true 'React Collapsible')
 
 ```js
 
