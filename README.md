@@ -1,7 +1,8 @@
 ## React Tabs
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![example workflow](https://github.com/atul15r/react-tabs/actions/workflows/main.yml/badge.svg)
+https://img.shields.io/npm/dt/@atul15r/react-tabs.svg
+![node-current](https://img.shields.io/node/v/@atul15r/react-tabs)
 
 **React-Tabs is an animated tab navigation component which is designed for react
 app.**
@@ -71,13 +72,13 @@ export default App;
 
 # Props
 
-| name            | type     | required | default   | description                                                                                                                                     |
-|-----------------|----------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| tabs            | array    | true     | []        | it takes an array of object       `{       title: string \| ReactNode   }[]`                                                                    |
-| tabsClassName   | string   | false    | undefined | add any custom class you want                                                                                                                   |
-| tabsStyle       | object   | false    | undefined |        `wrapperStyle=  {{                    background:"#ccc",                    color:"#999",                    ...etc                  }}` |
-| tabClassName    | string   | false    | undefined | add any custom class you want                                                                                                                   |
-| tabStyle        | object   | false    | undefined |  `   itemStyle= {{        padding:4, }}`                                                                                                        |
-| borderStyle     | object   | false    | undefined |  `borderStyle= {{        background:#6b6b6b, }}`                                                                                                |
-| borderClassName | string   | false    | undefined | add any custom class you want                                                                                                                   |
-| onChange        | function | false    | undefined |  `   onChange={(tabIndex)=>setCurrentTab(tabIndex)} `                                                                                           |
+| name            | type     | required | default   | description                                                    |
+| --------------- | -------- | -------- | --------- | -------------------------------------------------------------- |
+| tabs            | array    | true     | []        | it takes an array of object `{ title: string \| ReactNode }[]` |
+| tabsClassName   | string   | false    | undefined | add any custom class you want                                  |
+| tabsStyle       | object   | false    | undefined | `wrapperStyle= {{ background:"#ccc", color:"#999", ...etc }}`  |
+| tabClassName    | string   | false    | undefined | add any custom class you want                                  |
+| tabStyle        | object   | false    | undefined | ` itemStyle= {{ padding:4, }}`                                 |
+| borderStyle     | object   | false    | undefined | `borderStyle= {{ background:#6b6b6b, }}`                       |
+| borderClassName | string   | false    | undefined | add any custom class you want                                  |
+| onChange        | function | false    | undefined | ` onChange={(tabIndex)=>setCurrentTab(tabIndex)}`              |
