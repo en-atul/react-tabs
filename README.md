@@ -31,7 +31,7 @@ app.**
 # Quick Start
 
 ```js
-<Tabs items={items} />
+<Tabs tabs={tabs} />
 ```
 
 # Usage With Custom Styles
