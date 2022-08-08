@@ -18,6 +18,7 @@ const Tabs: FC<TabProps> = ({
   return (
     <ul className={`tabs ${tabsClassName}`} style={tabsStyle}>
       {tabs?.map((tab, idx) => {
+        const Component = tab.title as React.ElementType
         return (
           <li
             key={idx}
@@ -32,7 +33,7 @@ const Tabs: FC<TabProps> = ({
             }}
             style={tabStyle}
           >
-            {tab.title}
+            {typeof tab.title === 'string' ? tab.title : <Component />}
           </li>
         )
       })}
