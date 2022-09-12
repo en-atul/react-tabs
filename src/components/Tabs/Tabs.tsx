@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import React, {FC, useState} from 'react'
 
 import {TabProps} from '../../interfaces'
@@ -8,23 +9,27 @@ const Tabs: FC<TabProps> = ({
   onChange,
   tabsStyle,
   tabsClassName,
-  tabClassName,
   tabStyle,
+  tabClassName,
   borderStyle,
   borderClassName,
 }) => {
   const [activeTab, setTab] = useState(1)
 
   return (
-    <ul className={`tabs ${tabsClassName}`} style={tabsStyle}>
+    <ul className={classNames('tabs', {tabsClassName})} style={tabsStyle}>
       {tabs?.map((tab, idx) => {
         const Component = tab.title as React.ElementType
         return (
           <li
             key={idx}
-            className={`tab ${
-              activeTab === idx + 1 ? 'active' : ''
-            } ${tabClassName}`}
+            className={classNames(
+              'tab',
+              {
+                active: activeTab === idx + 1,
+              },
+              tabClassName,
+            )}
             id={idx + ''}
             role="tab"
             onClick={() => {

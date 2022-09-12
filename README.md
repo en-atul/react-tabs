@@ -1,6 +1,6 @@
 ## React Tabs
 
-![Build](https://github.com/atul15r/react-tabs/actions/workflows/main.yml/badge.svg)
+<!-- ![Build](https://github.com/atul15r/react-tabs/actions/workflows/main.yml/badge.svg) -->
 ![Download](https://img.shields.io/npm/dt/@atul15r/react-tabs.svg)
 
 **React-Tabs is an animated tab navigation component which is designed for react
